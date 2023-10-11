@@ -1,0 +1,323 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+ font-family: 'Book Antiqua',sans-serif;
+ margin:0;
+
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgba(101,33,165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgba(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:blueviolet;
+    font-size: 1.5em;
+}
+ 
+
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+    )
+    ,url("vi.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+#hero h1 {
+color: white;
+}
+
+#hero button{
+    font-size: 1.60em;
+}
+
+#Bestgames .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#videojuegos{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+#videojuegos .container{
+    padding: 100px 0px;
+}
+
+#videojuegos h3{
+    margin-top: 0;
+    font-size: 2.2em;
+}
+
+#videojuegos p{
+    display: none;
+}
+
+#videojuegos .carta{
+ background-position: center center;
+ background-size:cover;
+ padding: 50px 0px;
+ margin: 30px;
+ border-radius: 20px;
+}
+
+.carta:first-child{
+background-image: linear-gradient(
+    0deg,
+     rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5)
+)
+,url("wa.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+    )
+    ,url("san.jpg");
+    }
+    
+
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+    0deg,
+     rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5)
+)
+,url("mode.jpg");
+}
+
+#caracter .container{
+  text-align: center;
+  padding: 250px 12px;
+}
+
+#caracter li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#Ready{
+    display:flex;
+    flex-direction:column ;
+    justify-content:initial;
+    align-items:center;
+    text-align:center;
+    background-color: rgba(30,30,30);
+    color: whitesmoke;
+    height: 80vh;
+}
+#Ready {
+    background-image: url("fd.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 570px 530px;
+    background-position: center ;
+   
+
+}
+
+#Ready h5{
+    font-size: 2.4vw;
+}
+
+#Ready button{
+   font-size: 1.3em;
+   margin-top: -120px;
+
+}
+
+#footer{
+    background-color: white;
+}
+
+footer p{
+    margin: 0;
+    padding: 4px;
+    color: blueviolet;
+    text-align: center;
+}
+
+#footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
+#hero h1{
+    font-size: 5em;
+}
+#Bestgames .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Bestgames .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Bestgames h2{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 45px;
+}
+
+#Bestgames p{
+    font-size: 25px;
+}
+
+#Bestgames .img-container{
+    background-image: url("pal.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    height: 500px;
+    width: 400px;
+}
+
+#videojuegos .programas{
+    display: flex;
+    justify-content: center;
+}
+
+#videojuegos p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#videojuegos .carta{
+    padding: 15px;
+}
+
+#caracter {
+    background-image: url("marsh.png");  
+    background-repeat: no-repeat;
+    background-size: 600px  570px;
+    background-position: calc( 100vw  -   500px) 120px;
+    margin-top: -100px; 
+}
+
+
+#caracter .container{
+ text-align: initial;
+ font-size: 20px;
+ 
+}
+
+#caracter ul{
+    margin-left: 100px;
+}
+
+#footer.container {
+    justify-content: flex-end;
+    
+}
+
+@media(min-width: 1200px){
+    #caracter{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+

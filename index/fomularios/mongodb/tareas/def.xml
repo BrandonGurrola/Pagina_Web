@@ -1,0 +1,13 @@
+<Authors_Table>
+  <authors>
+    <au_id>172-32-1176</au_id>
+    <au_lname>White</au_lname>
+    <au_fname>Johnson</au_fname>
+    <phone>408 496-7223</phone>
+    <address>10932 Bigge Rd.</address>
+    <city>Menlo Park</city>
+    <state>CA</state>
+    <zip>94025</zip>
+    <contract>true</contract>
+  </authors>
+</Authors_Table>
